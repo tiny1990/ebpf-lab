@@ -31,7 +31,7 @@ func main() {
 	}
 	defer objs.Close()
 
-	kp, err := link.Kprobe("sys_execve", objs.KprobeExecve, nil)
+	kp, err := link.Kprobe("sys_execve", objs.KprobeSysExecve, nil)
 	if err != nil {
 		log.Fatalf("opening tracepoint:%s", err.Error())
 	}
