@@ -31,7 +31,7 @@ container-shell:
 format:
 	find . -type f -name "*.c" | xargs clang-format -i
 
-all: generate
+all: format generate
 
 generate: export BPF_CLANG := $(CLANG)
 generate: export BPF_CFLAGS := $(CFLAGS)
