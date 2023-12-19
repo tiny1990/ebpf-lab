@@ -1,6 +1,5 @@
 // +build ignore
 
-#include "bpf_tracing.h"
 #include "common.h"
 
 char __license[] SEC("license") = "Dual MIT/GPL";

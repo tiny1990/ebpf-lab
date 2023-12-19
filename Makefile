@@ -1,8 +1,8 @@
 
 
-CLANG ?= clang-14
-STRIP ?= llvm-strip-14
-OBJCOPY ?= llvm-objcopy-14
+CLANG ?= clang-17
+STRIP ?= llvm-strip-17
+OBJCOPY ?= llvm-objcopy-17
 CFLAGS := -O2 -g -Wall -Werror $(CFLAGS)
 
 REPODIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
@@ -12,7 +12,7 @@ IMAGE = ghcr.io/cilium/ebpf-builder
 VERSION = 1666886595
 
 
-.PHONY: all clean container-all container-shell generate
+.PHONY: all clean header container-all container-shell generate 
 
 
 container-all:
