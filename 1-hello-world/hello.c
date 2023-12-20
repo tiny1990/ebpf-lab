@@ -1,6 +1,6 @@
 // +build ignore
 
-#include "common.h"
+#include "../headers/common.h"
 
 char __license[] SEC("license") = "Dual MIT/GPL";
 
